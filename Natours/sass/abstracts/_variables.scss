@@ -11,6 +11,7 @@ $color-tertiary-dark: #5643fa;
 
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
 
 $color-white: #fff;
 $color-black: #000;
@@ -18,16 +19,12 @@ $color-black: #000;
 $color-gray-light-1: #f7f7f7;
 $color-gray-light-2: #eee;
 
-$color-invalid: orangered;
-
-$color-red: red;
-$color-orange: orange;
-
 // Font sizes
 $default-font-size: 1.6rem;
 
 // GRID
 
-$grid-width: 114rem;
+$grid-width: 100rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;

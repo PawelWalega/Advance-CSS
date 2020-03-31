@@ -1,14 +1,22 @@
 .btn {
+	&,
 	&:link,
 	&:visited {
 		text-transform: uppercase;
 		text-decoration: none;
+
+		// keep bigger padding on sides for better visual effect
 		padding: 1.5rem 4rem;
+
 		display: inline-block;
 		border-radius: 10rem;
 		transition: all .2s;
 		position: relative;
 		font-size: $default-font-size;
+		// change for the button element
+
+		border: none;
+		cursor: pointer;
 	}
 	&:hover {
 		transform: translateY(-3px);
@@ -18,7 +26,9 @@
 			opacity: 0;
 		}
 	}
-	&:active {
+	&:active,
+	&:focus {
+		outline: none;
 		transform: translateY(-1px);
 		box-shadow: 0 1rem 2rem;
 		box-shadow: 0 .5rem 1rem rgba($color-black, .2);
@@ -74,5 +84,23 @@
 	&:active {
 		box-shadow: 0 .5rem 1rem rgba($color-black, .15);
 		transform: translateY(0);
+	}
+	&--reversed {
+		&:link,
+		&:visited {
+			background-color: $color-primary;
+			color: $color-white;
+			border-bottom: .1rem solid $color-white;
+		}
+		&:hover {
+			background-color: $color-white;
+			color: $color-primary;
+			box-shadow: 0 1rem 2rem rgba($color-black, .15);
+			transform: translateY(-.2rem);
+		}
+		&:active {
+			box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+			transform: translateY(0);
+		}
 	}
 }
